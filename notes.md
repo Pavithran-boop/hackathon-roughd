@@ -26,7 +26,7 @@ Farmspherica Smart Grow Planner is a web‑based tool that lets you design and s
 * Cost & ROI calculator with animated number counters  
 * Yield, water‑saving, and sustainability metrics  
 * Floating leaf animations across the page  
-* Fully responsive layout for mobile and desktop  
+* Fully responsive layout for desktop  
 
 ## File Structure  
 
