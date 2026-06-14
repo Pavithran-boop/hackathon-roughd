@@ -67,9 +67,8 @@ The app does not save your choices; everything resets when you reload the page.
 The layout uses CSS Grid and a media query that collapses the header into a vertical stack on screens narrower than 480 px. Everything scales nicely on phones and tablets.
 
 ## How to Run  
-1. Open the folder `c:\Users\bhagavab\Desktop\hackathon roughd`.  
-2. Double‑click **`index.html`** (or open it in any modern browser).  
-3. Play with the sliders, radio buttons, and checkboxes to see the calculations and visual updates instantly. No server or build step is needed.
+1. Double‑click **`index.html`** (or open it in any modern browser).  
+2. Play with the sliders, radio buttons, and checkboxes to see the calculations and visual updates instantly. No server or build step is needed.
 
 ## Conclusion  
 Farmspherica Smart Grow Planner is a sleek, interactive web app that makes exploring hydroponic farm designs quick and visual. It packs all the core calculations, live SVG feedback, and smooth animations into a lightweight, client‑only solution
