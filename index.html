@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmspherica Smart Grow Planner — GrowIQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="intro-splash" class="intro-splash">
+        <div class="intro-bg-leaves" id="intro-leaves"></div>
+        <div class="intro-content">
+            <h2 id="intro-brand" class="intro-fade">Farmspherica Innovations</h2>
+            <p id="intro-presents" class="intro-fade">Presents</p>
+            <h1 id="intro-title" class="intro-fade">GrowIQ Smart Planner</h1>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="farmsphere_innovations_logo.jpg" alt="logo-img" class="logo-img">
+
+                <span class="logo-text">Farmspherica<span class="logo-sub">Innovations</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#" class="nav-item active">Home</a>
+                <a href="#planner-section" class="nav-item">Planner</a>
+                <a href="#solutions-section" class="nav-item">Solutions</a>
+                <a href="#sustainability-section" class="nav-item">Sustainability</a>
+                <a href="#footer-section" class="nav-item">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-primary" data-scroll-to="planner-section">🌱 Start Planning</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge">GrowIQ Platform v2.6</div>
+                <h1>Plan Your Hydroponic Farm Before You Build It</h1>
+                <p class="subheadline">Design, visualize, and optimize your closed-loop indoor or outdoor agritech
+                    growing system in real time with precision metrics.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-lg" data-scroll-to="planner-section">🌱 Launch Planner</button>
+                    <button class="btn btn-secondary btn-lg" data-scroll-to="solutions-section">📖 Learn More</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-leaves-container" id="hero-leaves"></div>
+                <svg width="100%" height="100%" viewBox="0 0 600 450" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="hero-svg">
+                    <rect x="150" y="340" width="300" height="12" rx="6" fill="#E2E8F0" />
+                    <rect x="180" y="352" width="240" height="40" rx="4" fill="#F1F5F9" stroke="#E2E8F0"
+                        stroke-width="2" />
+                    <line x1="220" y1="120" x2="220" y2="340" stroke="#CBD5E1" stroke-width="8"
+                        stroke-linecap="round" />
+                    <line x1="380" y1="120" x2="380" y2="340" stroke="#CBD5E1" stroke-width="8"
+                        stroke-linecap="round" />
+                    <rect x="120" y="140" width="360" height="28" rx="14" fill="#FFFFFF" stroke="#E2E8F0"
+                        stroke-width="3" />
+                    <rect x="120" y="220" width="360" height="28" rx="14" fill="#FFFFFF" stroke="#E2E8F0"
+                        stroke-width="3" />
+                    <rect x="120" y="290" width="360" height="28" rx="14" fill="#FFFFFF" stroke="#E2E8F0"
+                        stroke-width="3" />
+                    <path d="M 140 154 L 460 154" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"
+                        class="hero-water-flow" />
+                    <path d="M 460 234 L 140 234" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"
+                        class="hero-water-flow" style="animation-direction: reverse; stroke-dasharray: 8, 12;" />
+                    <path d="M 140 304 L 460 304" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"
+                        class="hero-water-flow" />
+                    <path d="M 460 154 C 490 154, 490 234, 460 234" stroke="#0ea5e9" stroke-width="4" fill="none" />
+                    <path d="M 140 234 C 110 234, 110 304, 140 304" stroke="#0ea5e9" stroke-width="4" fill="none" />
+                    <path d="M 440 304 L 440 352" stroke="#0ea5e9" stroke-width="4" fill="none" />
+                    <g class="hero-plant" transform="translate(180, 140)">
+                        <path d="M0 0 C-10 -20, -5 -30, 0 -35 C5 -30, 10 -20, 0 0" fill="#22C55E" />
+                        <path d="M0 0 C-20 -10, -25 -25, 0 -35" fill="#4ADE80" />
+                    </g>
+                    <g class="hero-plant" transform="translate(300, 140)" style="animation-delay: 0.3s;">
+                        <path d="M0 0 C-10 -20, -5 -30, 0 -35 C5 -30, 10 -20, 0 0" fill="#16A34A" />
+                        <path d="M0 0 C20 -10, 25 -25, 0 -35" fill="#4ADE80" />
+                    </g>
+                    <g class="hero-plant" transform="translate(420, 140)" style="animation-delay: 0.6s;">
+                        <path d="M0 0 C-10 -20, -5 -30, 0 -35 C5 -30, 10 -20, 0 0" fill="#22C55E" />
+                    </g>
+                    <g class="hero-plant" transform="translate(240, 220)" style="animation-delay: 0.2s;">
+                        <path d="M0 0 C-10 -20, -5 -30, 0 -35 C5 -30, 10 -20, 0 0" fill="#16A34A" />
+                    </g>
+                    <g class="hero-plant" transform="translate(360, 220)" style="animation-delay: 0.5s;">
+                        <path d="M0 0 C-10 -20, -5 -30, 0 -35 C5 -30, 10 -20, 0 0" fill="#22C55E" />
+                        <path d="M0 0 C20 -10, 25 -25, 0 -35" fill="#4ADE80" />
+                    </g>
+                    <g class="hero-plant" transform="translate(180, 290)" style="animation-delay: 0.1s;">
+                        <path d="M0 0 C-10 -20, -5 -30, 0 -35 C5 -30, 10 -20, 0 0" fill="#22C55E" />
+                    </g>
+                    <g class="hero-plant" transform="translate(300, 290)" style="animation-delay: 0.4s;">
+                        <path d="M0 0 C-10 -20, -5 -30, 0 -35 C5 -30, 10 -20, 0 0" fill="#16A34A" />
+                    </g>
+                    <rect x="160" y="80" width="280" height="16" rx="4" fill="#475569" />
+                    <rect x="180" y="96" width="240" height="6" rx="2" fill="#E2E8F0" class="hero-light-glow" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="planner-section" class="planner-section">
+        <div class="section-header">
+            <h2>GrowIQ Interactive Workspace</h2>
+            <p>Customize your infrastructure architecture parameters below to run matrix simulations instantly.</p>
+        </div>
+
+        <div class="planner-layout">
+            <div class="config-panel">
+                <h3 class="panel-title">System Configurations</h3>
+
+                <div class="form-group">
+                    <label class="custom-label">Select Environment Matrix</label>
+                    <div class="custom-segmented-control">
+                        <label class="segment-option">
+                            <input type="radio" name="farmType" value="balcony" checked>
+                            <span class="segment-btn">Balcony</span>
+                        </label>
+                        <label class="segment-option">
+                            <input type="radio" name="farmType" value="rooftop">
+                            <span class="segment-btn">Rooftop</span>
+                        </label>
+                        <label class="segment-option">
+                            <input type="radio" name="farmType" value="backyard">
+                            <span class="segment-btn">Backyard</span>
+                        </label>
+                        <label class="segment-option">
+                            <input type="radio" name="farmType" value="commercial">
+                            <span class="segment-btn">Commercial</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="slider-header">
+                        <label class="custom-label" for="spaceRange">Available Growth Footprint</label>
+                        <span id="spaceVal" class="slider-badge">40 sq ft</span>
+                    </div>
+                    <div class="slider-wrapper">
+                        <input type="range" id="spaceRange" class="custom-slider" min="10" max="2000" value="40">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="slider-header">
+                        <label class="custom-label" for="budgetRange">Allocated Setup Budget Target</label>
+                        <span id="budgetVal" class="slider-badge">$350</span>
+                    </div>
+                    <div class="slider-wrapper">
+                        <input type="range" id="budgetRange" class="custom-slider" min="50" max="10000" step="50"
+                            value="350">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="slider-header">
+                        <label class="custom-label" for="sunlightRange">Direct Native Sun Exposure</label>
+                        <span id="sunlightVal" class="slider-badge">5 hrs/day</span>
+                    </div>
+                    <div class="slider-wrapper">
+                        <input type="range" id="sunlightRange" class="custom-slider" min="0" max="12" value="5">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="slider-header">
+                        <label class="custom-label" for="spendingRange">Current Monthly Fresh Produce Expense</label>
+                        <span id="spendingVal" class="slider-badge">$120/mo</span>
+                    </div>
+                    <div class="slider-wrapper">
+                        <input type="range" id="spendingRange" class="custom-slider" min="20" max="1000" step="10"
+                            value="120">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="custom-label">Modular Core Component Upgrades</label>
+                    <div class="addons-grid">
+                        <label class="addon-card">
+                            <input type="checkbox" id="addonLights" class="custom-checkbox">
+                            <span class="checkbox-ui"></span>
+                            <div class="addon-details">
+                                <span class="addon-name">LED Grow Illuminators</span>
+                                <span class="addon-cost">+$45 Setup</span>
+                            </div>
+                        </label>
+                        <label class="addon-card">
+                            <input type="checkbox" id="addonPump" class="custom-checkbox">
+                            <span class="checkbox-ui"></span>
+                            <div class="addon-details">
+                                <span class="addon-name">Fluid Flow HydroPump</span>
+                                <span class="addon-cost">+$25 Setup</span>
+                            </div>
+                        </label>
+                        <label class="addon-card">
+                            <input type="checkbox" id="addonPh" class="custom-checkbox">
+                            <span class="checkbox-ui"></span>
+                            <div class="addon-details">
+                                <span class="addon-name">Digital Auto-pH Sensor Kit</span>
+                                <span class="addon-cost">+$15 Setup</span>
+                            </div>
+                        </label>
+                        <label class="addon-card">
+                            <input type="checkbox" id="addonNutrients" class="custom-checkbox">
+                            <span class="checkbox-ui"></span>
+                            <div class="addon-details">
+                                <span class="addon-name">Bio-Aqueous Minerals</span>
+                                <span class="addon-cost">+$20 Setup</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="simulation-panel">
+
+                <div class="visualizer-container" id="visualizerViewport">
+                    <div class="simulator-badge">Live Asset Simulator</div>
+
+                    <svg width="100%" height="100%" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        id="farmSvg">
+                        <defs>
+                            <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#F8FAFC" />
+                                <stop offset="100%" stop-color="#E2E8F0" />
+                            </linearGradient>
+                            <linearGradient id="lightBeam" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#A855F7" stop-opacity="0.25" />
+                                <stop offset="100%" stop-color="#A855F7" stop-opacity="0.0" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="600" height="400" fill="url(#skyGrad)" rx="16" />
+
+                        <g id="env-balcony" class="env-group">
+                            <rect x="0" y="320" width="600" height="80" fill="#94A3B8" />
+                            <line x1="0" y1="320" x2="600" y2="320" stroke="#475569" stroke-width="6" />
+                            <rect x="40" y="220" width="20" height="100" fill="#64748B" />
+                            <rect x="540" y="220" width="20" height="100" fill="#64748B" />
+                            <line x1="40" y1="240" x2="560" y2="240" stroke="#64748B" stroke-width="4" />
+                            <line x1="40" y1="270" x2="560" y2="270" stroke="#64748B" stroke-width="4" />
+                        </g>
+
+                        <g id="env-rooftop" class="env-group" style="display:none;">
+                            <rect x="0" y="340" width="600" height="60" fill="#475569" />
+                            <line x1="0" y1="340" x2="600" y2="340" stroke="#334155" stroke-width="4" />
+                            <path
+                                d="M30 340 L30 280 L70 280 L70 340 M100 340 L100 240 L160 240 L160 340 M480 340 L480 260 L530 260 L530 340"
+                                stroke="#CBD5E1" stroke-width="2" fill="none" />
+                        </g>
+
+                        <g id="env-backyard" class="env-group" style="display:none;">
+                            <rect x="0" y="310" width="600" height="90" fill="#15803D" />
+                            <rect x="0" y="160" width="600" height="150" fill="#FEF08A" fill-opacity="0.15" />
+                            <line x1="0" y1="310" x2="600" y2="310" stroke="#166534" stroke-width="4" />
+                            <path
+                                d="M0 310 L600 310 M50 310 L50 240 M150 310 L150 240 M250 310 L250 240 M350 310 L350 240 M450 310 L450 240 M550 310 L550 240"
+                                stroke="#B45309" stroke-width="3" />
+                        </g>
+
+                        <g id="env-commercial" class="env-group" style="display:none;">
+                            <rect x="0" y="350" width="600" height="50" fill="#334155" />
+                            <path d="M 20 350 A 280 260 0 0 1 580 350" stroke="#94A3B8" stroke-width="4"
+                                stroke-dasharray="6,6" fill="none" />
+                            <path d="M 80 350 A 220 200 0 0 1 520 350" stroke="#94A3B8" stroke-width="2" fill="none" />
+                            <line x1="300" y1="90" x2="300" y2="350" stroke="#94A3B8" stroke-width="2" />
+                        </g>
+
+                        <g id="farm-pipes-tier1">
+                            <rect x="180" y="310" width="240" height="40" rx="8" fill="#E2E8F0" stroke="#CBD5E1"
+                                stroke-width="2" />
+                            <rect x="100" y="240" width="400" height="24" rx="12" fill="#FFFFFF" stroke="#94A3B8"
+                                stroke-width="2" />
+                        </g>
+
+                        <g id="farm-pipes-tier2" style="display:none;">
+                            <rect x="100" y="170" width="400" height="24" rx="12" fill="#FFFFFF" stroke="#94A3B8"
+                                stroke-width="2" />
+                            <line x1="120" y1="170" x2="120" y2="310" stroke="#CBD5E1" stroke-width="4" />
+                            <line x1="480" y1="170" x2="480" y2="310" stroke="#CBD5E1" stroke-width="4" />
+                        </g>
+
+                        <g id="farm-pipes-tier3" style="display:none;">
+                            <rect x="100" y="100" width="400" height="24" rx="12" fill="#FFFFFF" stroke="#94A3B8"
+                                stroke-width="2" />
+                            <line x1="120" y1="100" x2="120" y2="170" stroke="#CBD5E1" stroke-width="4" />
+                            <line x1="480" y1="100" x2="480" y2="170" stroke="#CBD5E1" stroke-width="4" />
+                        </g>
+
+                        <g id="sim-water-pump-loop" style="display:none;">
+                            <path d="M 195 310 L 195 252 L 490 252" stroke="#0EA5E9" stroke-width="3" fill="none"
+                                class="water-pipe-stream" id="stream-t1" />
+                            <path d="M 490 252 L 490 182 L 110 182" stroke="#0EA5E9" stroke-width="3" fill="none"
+                                class="water-pipe-stream" id="stream-t2" style="display:none;" />
+                            <path d="M 110 182 L 110 112 L 490 112" stroke="#0EA5E9" stroke-width="3" fill="none"
+                                class="water-pipe-stream" id="stream-t3" style="display:none;" />
+                        </g>
+
+                        <g id="sim-addon-lights" style="display:none;">
+                            <g id="light-fixture-top" style="display:none;">
+                                <rect x="120" y="75" width="360" height="10" rx="3" fill="#1E293B" />
+                                <polygon points="120,85 80,102 520,102 480,85" fill="url(#lightBeam)" />
+                            </g>
+                            <g id="light-fixture-mid" style="display:none;">
+                                <rect x="120" y="145" width="360" height="10" rx="3" fill="#1E293B" />
+                                <polygon points="120,145 80,172 520,172 480,145" fill="url(#lightBeam)" />
+                            </g>
+                            <g id="light-fixture-btm">
+                                <rect x="120" y="215" width="360" height="10" rx="3" fill="#1E293B" />
+                                <polygon points="120,215 80,242 520,242 480,215" fill="url(#lightBeam)" />
+                            </g>
+                        </g>
+
+                        <g id="sim-addon-pump" style="display:none;">
+                            <rect x="190" y="315" width="25" height="25" rx="4" fill="#0284C7" stroke="#0369A1"
+                                stroke-width="2" />
+                            <circle cx="202" cy="327" r="4" fill="#38BDF8" class="indicator-pulse" />
+                        </g>
+
+                        <g id="sim-addon-ph" style="display:none;">
+                            <rect x="370" y="320" width="16" height="24" rx="2" fill="#0F172A" />
+                            <line x1="378" y1="334" x2="378" y2="352" stroke="#EF4444" stroke-width="2" />
+                            <circle cx="378" cy="326" r="3" fill="#22C55E" class="indicator-pulse" />
+                        </g>
+
+                        <g id="sim-addon-nutrients" style="display:none;">
+                            <rect x="400" y="295" width="30" height="40" rx="4" fill="#15803D" stroke="#166534"
+                                stroke-width="2" />
+                            <path d="M 405 310 L 425 310 M 415 300 L 415 320" stroke="#FFFFFF" stroke-width="2" />
+                            <path d="M 400 320 Q 390 320 390 342" stroke="#166534" stroke-width="1.5" fill="none"
+                                stroke-dasharray="3,3" />
+                        </g>
+
+                        <g id="plant-population-matrix"></g>
+                    </svg>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card full-width">
+                        <span class="metric-label">Recommended Architectural Blueprint</span>
+                        <span id="calcSystemName" class="metric-value highlight-green">Determining...</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Immediate Capital Setup Cost</span>
+                        <span id="calcSetupCost" class="metric-value">$0</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Monthly Operational Running Cost</span>
+                        <span id="calcMonthlyCost" class="metric-value">$0</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Projected Annual Running Cost</span>
+                        <span id="calcAnnualCost" class="metric-value">$0</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Simulated Annual Crop Yield</span>
+                        <span id="calcYieldOutput" class="metric-value">0 lbs/yr</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Conserved Resource Water Savings</span>
+                        <span id="calcWaterSavings" class="metric-value">0%</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Break-Even Amortization Timeline</span>
+                        <span id="calcRoiTimeline" class="metric-value">0 Mos</span>
+                    </div>
+                    <div class="metric-card full-width">
+                        <div class="score-header">
+                            <span class="metric-label">Environmental Grid Sustainability Score</span>
+                            <span id="calcSustainabilityScore" class="metric-value score-badge">0</span>
+                        </div>
+                        <div class="progress-track">
+                            <div id="scoreProgressBar" class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-lockup">
+                    <button class="btn btn-primary btn-block btn-lg" id="btnLockConfiguration">🔒 Secure Investment
+                        Blueprint Dataset</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions-section" class="solutions-section">
+        <div class="container">
+            <div class="section-badge">Platform Pillars</div>
+            <h2>Next-Generation Precision Agricultural Infrastructure</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💧</div>
+                    <h3>Closed-Loop Recirculation</h3>
+                    <p>Redirect nutrient-rich water layers iteratively. Bypasses soil evaporation matrices entirely,
+                        conserving crucial elements.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Automated Photon Delivery</h3>
+                    <p>Optimized spectrum wavelengths trigger photosynthetic reactions without relying heavily on
+                        ambient conditions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Dynamic Data Balancing</h3>
+                    <p>Continuous monitoring loops prevent unexpected changes in nutrient profiles, securing long-term
+                        farm stability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sustainability-section" class="sustainability-section">
+        <div class="container">
+            <div class="split-infographic">
+                <div class="info-text">
+                    <div class="section-badge text-green">Ecological Asset Architecture</div>
+                    <h2>Engineered to Reduce Carbon and Resource Footprints</h2>
+                    <p>Traditional agricultural supply lines require intensive resource investments. Farmspherica builds
+                        decentralized systems that shift production directly to consumer nodes, eliminating intermediate
+                        logistics networks and localized environmental overhead.</p>
+                    <div class="eco-checklist">
+                        <div class="check-item">✨ Zero herbicide runoff into surface watersheds</div>
+                        <div class="check-item">✨ Lower logistical carbon footprints via on-site growth</div>
+                        <div class="check-item">✨ Accelerated harvest cycles reduce overall energy loads</div>
+                    </div>
+                </div>
+                <div class="info-graphics-box">
+                    <div class="stat-callout">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-desc">Less water consumed relative to conventional industrial agriculture
+                            pipelines.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="checkoutModal">
+        <div class="modal-window">
+            <button class="modal-close" id="btnCloseModal">&times;</button>
+            <span class="modal-icon">🏆</span>
+            <h3>Blueprint Parameters Locked Successfully</h3>
+            <p>Your custom configuration has been parsed and transmitted to our agricultural engineering division. A
+                customized physical framework estimate will be built matching your setup metrics.</p>
+            <div class="modal-summary">
+                <div class="summary-line"><span>Assigned Footprint Scale:</span><strong
+                        id="modalSummaryScale">...</strong></div>
+                <div class="summary-line"><span>Estimated Initial Capital:</span><strong
+                        id="modalSummaryCost">...</strong></div>
+            </div>
+            <button class="btn btn-primary btn-block" id="btnModalAcknowledge">Return to Workstation Base</button>
+        </div>
+    </div>
+
+    <div class="global-leaf-layer" id="global-leaves-canvas"></div>
+
+    <footer id="footer-section" class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span>🌱</span>
+                    <span class="logo-text">Farmspherica</span>
+                </div>
+                <p class="mission-statement">Empowering sustainable food production through intelligent hydroponic
+                    technology.</p>
+            </div>
+            <div class="footer-nav-block">
+                <h4>System Workspace</h4>
+                <a href="#">Platform Overview</a>
+                <a href="#planner-section">GrowIQ Modeler Workspace</a>
+                <a href="#solutions-section">Hardware Standards</a>
+            </div>
+            <div class="footer-nav-block">
+                <h4>Compliance Matrix</h4>
+                <a href="#"
+                    onclick="alert('System secure under global ISO-Agri agricultural design framework.')">Privacy Policy
+                    Protocols</a>
+                <a href="#"
+                    onclick="alert('Operational frameworks verified against standard environmental codes.')">Terms of
+                    System Deployment</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Farmspherica Innovations Inc. All precision agritech blueprints reserved.</p>
+            <p class="tech-stack-indicator">Core Web Stack Native Architecture Client-Side Instance</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
